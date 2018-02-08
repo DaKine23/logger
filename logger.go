@@ -184,7 +184,7 @@ func removeFullPath(fn string) string {
 	repoProvider := os.Getenv("REPO_PROVIDER")
 
 	if len(repoProvider) == 0 {
-		repoProvider = "github.bus.zalan.do"
+		repoProvider = "github.com"
 	}
 
 	return removeFromStartToInputIfFound(fn, repoProvider)
