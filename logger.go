@@ -180,7 +180,7 @@ func logAbstract(skip int, format string, values ...interface{}) {
 
 func removeFullPath(fn string) string {
 
-	//REPO_PROVIDER allows to use animal in all kinds of repos e.g. github.com or bitbucket
+	//REPO_PROVIDER allows to use logger in all kinds of repos e.g. github.com or bitbucket
 	repoProvider := os.Getenv("REPO_PROVIDER")
 
 	if len(repoProvider) == 0 {
